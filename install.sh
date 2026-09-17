@@ -11,7 +11,7 @@ clean_bird() {
 }
 
 install_bird() {
-  cp bird.conf tables.conf communities.conf pref.conf /etc/bird/
+  cp bird.conf tables.conf communities.conf pref.conf attributes.conf /etc/bird/
   cp -r "hosts/$(hostname -s)/"* /etc/bird/
   cp -r filters functions protocols templates /etc/bird/
 }
